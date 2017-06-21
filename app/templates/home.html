@@ -1,1 +1,10 @@
- <div ng-repeat="room in home.room">Hello </div>
+ <div ng-repeat="currentRoom in home.chatRooms">{{ currentRoom.name }}</div>
+
+<!-- create a form, look up ng-submit -->
+<form>
+ <div>
+     <label for="name">Name:</label>
+     <!-- look up ng-model -->
+     <input type="text" id="name" name="user_name">
+ </div>
+</form>

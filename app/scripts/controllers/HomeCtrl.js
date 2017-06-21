@@ -1,6 +1,8 @@
 (function() {
     function HomeCtrl(Room) {
-      chatRooms = Room.all
+      this.chatRooms = Room.all;
+      // create room object and pass it to Room.add when the form is submitted, using the input from the form
+
     }
 
     angular
