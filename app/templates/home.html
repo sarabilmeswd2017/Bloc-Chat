@@ -1,10 +1,11 @@
  <div ng-repeat="currentRoom in home.chatRooms">{{ currentRoom.name }}</div>
 
 <!-- create a form, look up ng-submit -->
-<form>
- <div>
+<form ng-submit="submit()" ng-repeat="addRoom in home.room">
+
      <label for="name">Name:</label>
      <!-- look up ng-model -->
-     <input type="text" id="name" name="user_name">
- </div>
+     <input type="text" id="name" name="user_name" ng-model="text">
+     <input type="submit" id="submit" value="Submit" />
+
 </form>
