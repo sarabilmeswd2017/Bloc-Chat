@@ -6,7 +6,7 @@
 
     Message.getByRoomId = function(roomId) {
         // Filter the messages by their room ID.
-      messages.orderByChild('roomID').equalTo(roomId);
+      messages.orderByChild('roomID').equalTo('roomId');
 
   };
 
