@@ -6,9 +6,8 @@
 
     Message.getByRoomId = function(roomId) {
         // Filter the messages by their room ID.
-        messages.orderByChild('roomID').equalTo(roomId).on('value', function(snapshot) {
-  console.log(snapshot.messages());
-  });
+      messages.orderByChild('roomID').equalTo(roomId);
+
   };
 
     return Message;
