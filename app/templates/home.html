@@ -1,11 +1,21 @@
- <div ng-repeat="currentRoom in home.chatRooms">{{ currentRoom.name }}</div>
+<section class="room-container">
+  <h1>Bloc Chat</h1>
+  <!-- create a form, look up ng-submit -->
+  <form ng-submit="home.room">
 
-<!-- create a form, look up ng-submit -->
-<form ng-submit="home.room">
+       <label for="name">Name:</label>
+       <!-- look up ng-model -->
+       <input type="text" id="name" name="user_name" ng-model="room">
+       <input type="submit" id="submit" value="Submit" />
 
-     <label for="name">Name:</label>
-     <!-- look up ng-model -->
-     <input type="text" id="name" name="user_name" ng-model="room">
-     <input type="submit" id="submit" value="Submit" />
+  </form>
 
-</form>
+ <div ng-repeat="currentRoom in home.chatRooms" ng-click="home.activeRoom">{{ currentRoom.name }}</div>
+
+
+
+</section>
+
+<section class="message-container">
+<h1>Messages</h1>
+</section>
