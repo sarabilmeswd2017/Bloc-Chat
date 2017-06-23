@@ -1,9 +1,9 @@
 (function() {
     function HomeCtrl(Room) {
-      this.chatRooms = Room.all;
+      this.rooms = Room.all;
       // create room object and pass it to Room.add when the form is submitted, using the input from the form
-      var room = {};
-      this.room = Room.add();
+
+      this.createRoom = Room.add;
 
 
     }
