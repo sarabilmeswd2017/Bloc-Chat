@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl(Room) {
+    function HomeCtrl(Room, Message) {
       this.rooms = Room.all;
       // create room object and pass it to Room.add when the form is submitted, using the input from the form
 
@@ -12,5 +12,5 @@
 
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', 'Message' HomeCtrl]);
 })();
