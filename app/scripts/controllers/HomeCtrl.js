@@ -6,7 +6,7 @@
 
       this.createRoom = Room.add;
 
-    /*  this.activeRoom = Message.getByRoomId();*/
+      this.activeRoom = Message.getByRoomId;
 
     }
 
