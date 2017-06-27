@@ -7,10 +7,10 @@
 
     Message.getByRoomId = function(roomId) {
         // Filter the messages by their room ID.
-    return  messages.orderByChild('roomId').equalTo(roomId);
+      var filteredRef = ref.orderByChild('roomId').equalTo(roomId);
+      return  $firebaseArray(filteredRef);
 
-
-  };
+    };
 
 
     return Message;

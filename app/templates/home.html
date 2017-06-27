@@ -11,7 +11,7 @@
 
   </form>
 
- <div ng-repeat="currentRoom in home.rooms" ng-click="home.activeRoom" class="pointer">{{ currentRoom.name }}</div>
+ <div ng-repeat="currentRoom in home.rooms" ng-click="home.selectRoom(currentRoom.$id)" class="pointer">{{ currentRoom.name }}</div>
 
 
 
@@ -19,4 +19,5 @@
 
 <section class="message-container">
 <h1>Messages</h1>
+<div ng-repeat="message in home.messages">{{ message.content }}</div>
 </section>
