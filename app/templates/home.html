@@ -1,12 +1,28 @@
+<div class="modal">
+<div class="user-form">
+  <form  ng-submit="home.addUsername(newUser)">
+
+<div class="form-details">
+       <label for="username">Name:</label>
+       <!-- look up ng-model -->
+       <input type="text" id="username" name="user_name" ng-model="newUser">
+       <input type="submit" id="submit" value="Submit" />
+</div>
+  </form>
+</div>
+</div>
+
 <section class="room-container">
   <h1>Bloc Chat</h1>
+
+
   <!-- create a form, look up ng-submit -->
   <form ng-submit="home.createRoom({name: newRoomName})">
 
 
-       <label for="name">Name:</label>
+       <label for="room">Room:</label>
        <!-- look up ng-model -->
-       <input type="text" id="name" name="user_name" ng-model="newRoomName">
+       <input type="text" id="room" name="room_name" ng-model="newRoomName">
        <input type="submit" id="submit" value="Submit" />
 
   </form>

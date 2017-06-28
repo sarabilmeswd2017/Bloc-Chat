@@ -27,3 +27,31 @@ padding:5px;
 .pointer {
     cursor: pointer;
 }
+
+.modal {
+  position: absolute;
+  left:50%;
+  top:45%;
+  bottom:50%;
+
+}
+
+.user-form{
+  position:relative;
+  left:-50%;
+  top:-50%;
+  bottom:-50%;
+  background-color: gray;
+  padding: 20px;
+  width:200px;
+  height:200px;
+  border:solid aqua 3px;
+  display: block;
+  vertical-align:middle;
+  line-height: 30px;
+}
+
+.form-details{
+  position:absolute;
+  top:25%;
+}
