@@ -1,12 +1,13 @@
-<div class="modal">
+<div class="modal" ng-hide="userForm.$submitted">
 <div class="user-form">
-  <form  ng-submit="home.addUsername(newUser)">
+  <form  ng-submit="home.addUsername(newUser)" name="userForm" ng-hide="userForm.$submitted">
 
 <div class="form-details">
        <label for="username">Name:</label>
        <!-- look up ng-model -->
        <input type="text" id="username" name="user_name" ng-model="newUser">
        <input type="submit" id="submit" value="Submit" />
+
 </div>
   </form>
 </div>

@@ -8,11 +8,13 @@
       this.createRoom = Room.add;
 
       this.selectRoom = function(roomId) {
-        
+
         this.messages = Message.getByRoomId(roomId);
       }
 
       this.addUsername = Username.createUsername;
+
+      
 
     }
 
