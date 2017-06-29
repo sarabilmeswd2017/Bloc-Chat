@@ -12,6 +12,13 @@
 
     };
 
+    Message.send = function(newMessage) {
+            // Send method logic
+            Message.add = function(newMessage) {
+                messages.$add(newMessage);
+            }
+console.log(newMessage);
+        };
 
     return Message;
 

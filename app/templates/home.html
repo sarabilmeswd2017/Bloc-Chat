@@ -29,12 +29,22 @@
   </form>
 
  <div ng-repeat="currentRoom in home.rooms" ng-click="home.selectRoom(currentRoom.$id)" class="pointer">{{ currentRoom.name }}</div>
-
-
-
 </section>
 
 <section class="message-container">
 <h1>Messages</h1>
 <div ng-repeat="message in home.messages">{{ message.content }}</div>
+<!--<div ng-repeat="newMessage in home.addMessages">{{newMessage.content}}</div>-->
+
+<div class="send-box">
+<form ng-submit="home.addMessage({content: newMessage})">
+
+
+     <label for="message">Message:</label>
+     <!-- look up ng-model -->
+     <input type="text" id="message" name="message" ng-model="newMessage">
+     <input type="submit" id="submit" value="Submit" />
+
+</form>
+</div>
 </section>

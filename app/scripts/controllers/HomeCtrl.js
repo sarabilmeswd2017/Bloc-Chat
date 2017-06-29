@@ -14,7 +14,7 @@
 
       this.addUsername = Username.createUsername;
 
-      
+      this.addMessage = Message.send; 
 
     }
 

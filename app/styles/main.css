@@ -10,6 +10,7 @@ html, body{
 
 
 .message-container{
+
 float:right;
 height:100%;
 width:65%;
@@ -29,29 +30,37 @@ padding:5px;
 }
 
 .modal {
-  position: absolute;
-  left:50%;
-  top:45%;
-  bottom:50%;
+  width: 200px;
+  height: 200px;
 
-}
-
-.user-form{
-  position:relative;
-  left:-50%;
-  top:-50%;
-  bottom:-50%;
-  background-color: gray;
-  padding: 20px;
-  width:200px;
-  height:200px;
   border:solid aqua 3px;
-  display: block;
-  vertical-align:middle;
+  background-color: gray;
   line-height: 30px;
+
+   position: absolute;
+   top:0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   margin: auto;
+   padding:5px;
+
 }
+
 
 .form-details{
   position:absolute;
   top:25%;
+}
+
+.message-container .send-box{
+  background-color:grey;
+  padding:30px;
+  position:absolute;
+  bottom:0;
+  right:0;
+  height:80px;
+  float:right;
+  width:80%;
 }
