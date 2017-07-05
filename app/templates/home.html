@@ -33,16 +33,16 @@
 
 <section class="message-container">
 <h1>Messages</h1>
-<div ng-repeat="message in home.messages">{{ message.content }}</div>
-<!--<div ng-repeat="newMessage in home.addMessages">{{newMessage.content}}</div>-->
+<div ng-repeat="message in home.messages">{{ message.username }}: {{ message.content }}</div>
+
 
 <div class="send-box">
-<form ng-submit="home.addMessage({content: newMessage})">
+<form ng-submit="home.addMessage(newMessage, home.storedCurrentRoom, home.storedCurrentUser())">
 
 
      <label for="message">Message:</label>
      <!-- look up ng-model -->
-     <input type="text" id="message" name="message" ng-model="newMessage">
+     <input type="text" id="message" name="message" ng-model="newMessage" placeholder="Write your message here">
      <input type="submit" id="submit" value="Submit" />
 
 </form>

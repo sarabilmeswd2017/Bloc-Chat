@@ -12,13 +12,21 @@
 
     };
 
-    Message.send = function(newMessage) {
-            // Send method logic
-            Message.add = function(newMessage) {
-                messages.$add(newMessage);
-            }
-console.log(newMessage);
-        };
+    Message.send = function(newMessage, currentRoom, currentUser) {
+
+      var message = {
+        content: newMessage,
+        roomId: currentRoom,
+        username: 
+      };
+
+      console.log(message);
+
+      messages.$add(message);
+
+    };
+
+
 
     return Message;
 

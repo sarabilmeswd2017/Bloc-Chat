@@ -9,7 +9,10 @@
     $cookies.put('currentUser', username);
     }
 
-    
+    Username.getCurrentUser = function(){
+      return $cookies.get('currentUser');
+    }
+
     return Username;
   }
 
