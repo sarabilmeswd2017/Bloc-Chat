@@ -17,7 +17,7 @@
       var message = {
         content: newMessage,
         roomId: currentRoom,
-        username: 
+        username: currentUser
       };
 
       console.log(message);

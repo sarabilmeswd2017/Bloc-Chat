@@ -8,21 +8,19 @@ html, body{
           box-sizing: border-box;
 }
 
-
-.message-container{
-
-float:right;
-height:100%;
-width:65%;
-padding:5px;
-}
-
-
-.room-container{float:left;
+.room-container{
+float:left;
 background-color:lightgrey;
 height:100%;
 padding:5px;
+width:250px;
 
+}
+
+.message-container{
+height:100%;
+padding:5px;
+position:relative;
 }
 
 .pointer {
@@ -61,6 +59,7 @@ padding:5px;
   bottom:0;
   right:0;
   height:80px;
-  float:right;
   width:80%;
+  float:right;
+
 }
