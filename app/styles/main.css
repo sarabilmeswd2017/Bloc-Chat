@@ -21,10 +21,12 @@ width:250px;
 height:100%;
 padding:5px;
 position:relative;
+margin-left:250px;
 }
 
 .pointer {
     cursor: pointer;
+    line-height:2em;
 }
 
 .modal {
@@ -44,6 +46,8 @@ position:relative;
    margin: auto;
    padding:5px;
 
+   z-index:1;
+
 }
 
 
@@ -59,7 +63,16 @@ position:relative;
   bottom:0;
   right:0;
   height:80px;
-  width:80%;
+  width:100%;
   float:right;
+  margin-left:250px;
 
+}
+
+.eachMessage {
+  border-bottom:solid black 2px;
+  line-height:2em;
+}
+.eachMessage:nth-child(odd){
+  background-color:lightblue;
 }

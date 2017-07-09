@@ -13,7 +13,7 @@
 </div>
 </div>
 
-<section class="room-container">
+<section class="room-container" class="clearfix">
   <h1>Bloc Chat</h1>
 
 
@@ -33,7 +33,7 @@
 
 <section class="message-container">
 <h1>Messages</h1>
-<div ng-repeat="message in home.messages">{{ message.username }}: {{ message.content }}</div>
+<div ng-repeat="message in home.messages" class="eachMessage">{{ message.username }}: {{ message.content }}</div>
 
 
 <div class="send-box">
