@@ -7,10 +7,15 @@ html, body{
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+h1{
+  color:#7c6b33;
+}
+body{font-family: 'Raleway', sans-serif;
+}
 .room-container{
 float:left;
-background-color:lightgrey;
+background-image:url(../assets/img/cork-wallet.png);
+
 height:100%;
 padding:5px;
 width:250px;
@@ -22,20 +27,30 @@ height:100%;
 padding:5px;
 position:relative;
 margin-left:250px;
+background-image:url(../assets/img/Sports.png);
 }
-
+.roomForm{
+  margin-bottom:5px;
+}
 .pointer {
     cursor: pointer;
     line-height:2em;
+    font-weight:bold;
+    border:solid #8fc9a6 1px;
+
 }
 
 .modal {
   width: 200px;
   height: 200px;
 
-  border:solid aqua 3px;
-  background-color: gray;
+
+  background-color: #7c6b33;
   line-height: 30px;
+  -webkit-box-shadow: 3px 3px 9px 2px #000000;
+box-shadow: 3px 3px 9px 2px #000000;
+-webkit-border-radius: 4px 4px 4px 4px;
+border-radius: 4px 4px 4px 4px;
 
    position: absolute;
    top:0;
@@ -57,7 +72,7 @@ margin-left:250px;
 }
 
 .message-container .send-box{
-  background-color:grey;
+  background-color:#8fc9a6;
   padding:30px;
   position:absolute;
   bottom:0;
@@ -69,10 +84,12 @@ margin-left:250px;
 
 }
 
+#message{width:200px;}
+
 .eachMessage {
   border-bottom:solid black 2px;
   line-height:2em;
 }
 .eachMessage:nth-child(odd){
-  background-color:lightblue;
+  background-color:#7c6b33;
 }

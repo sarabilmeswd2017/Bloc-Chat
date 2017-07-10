@@ -14,11 +14,11 @@
 </div>
 
 <section class="room-container" class="clearfix">
-  <h1>Bloc Chat</h1>
+  <h1>Camp Chatter</h1>
 
 
   <!-- create a form, look up ng-submit -->
-  <form ng-submit="home.createRoom({name: newRoomName})">
+  <form class="roomForm" ng-submit="home.createRoom({name: newRoomName})">
 
 
        <label for="room">Room:</label>
@@ -33,6 +33,7 @@
 
 <section class="message-container">
 <h1>Messages</h1>
+ 
 <div ng-repeat="message in home.messages" class="eachMessage">{{ message.username }}: {{ message.content }}</div>
 
 
