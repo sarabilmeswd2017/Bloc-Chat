@@ -12,12 +12,13 @@
 
     };
 
-    Message.send = function(newMessage, currentRoom, currentUser) {
-
+    Message.send = function(newMessage, currentRoom, currentUser, sentAt) {
+      var date = new Date();
       var message = {
         content: newMessage,
         roomId: currentRoom,
-        username: currentUser
+        username: currentUser,
+        sentAt: date
       };
 
       console.log(message);

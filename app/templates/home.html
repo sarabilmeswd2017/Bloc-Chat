@@ -33,8 +33,8 @@
 
 <section class="message-container">
 <h1>Messages</h1>
- 
-<div ng-repeat="message in home.messages" class="eachMessage">{{ message.username }}: {{ message.content }}</div>
+
+<div ng-repeat="message in home.messages" class="eachMessage">{{ message.username }}: {{ message.content }} <div class="date" >{{ message.sentAt}} </div></div>
 
 
 <div class="send-box">
