@@ -34,11 +34,12 @@
 <section class="message-container">
 <h1>Messages</h1>
 
-<div ng-repeat="message in home.messages" class="eachMessage">{{ message.username }}: {{ message.content }} <div class="date" >{{ message.sentAt}} </div></div>
+<div ng-repeat="message in home.messages" class="eachMessage">
+  {{ message.username }}: {{ message.content }} <div class="date" >{{ message.sentAt | date: 'medium'}} </div></div>
 
 
 <div class="send-box">
-<form ng-submit="home.addMessage(newMessage, home.storedCurrentRoom, home.storedCurrentUser())">
+<form ng-submit="home.addMessage(newMessage, home.storedCurrentRoom, home.storedCurrentUser(), sentAt)">
 
 
      <label for="message">Message:</label>

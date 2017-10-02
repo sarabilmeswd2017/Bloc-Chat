@@ -5,6 +5,7 @@
       // need a way to keep track of the selected room
       this.storedCurrentRoom = null;
       this.storedCurrentUser = Username.getCurrentUser;
+      this.storedSentAt = null;
 
 
       this.createRoom = Room.add;
